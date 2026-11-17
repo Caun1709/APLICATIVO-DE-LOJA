@@ -1,4 +1,4 @@
-
+import Carrinnho from "./pages/Carinho";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
@@ -34,6 +34,10 @@ function App() {
     setCarrinho((produtos) =>
       produtos.filter((produto) => produto.id !== id)
     );
+  }
+
+  function limparCarrinho() {
+    setCarrinho([]);
   }
 
   const total = carrinho.reduce(
@@ -75,6 +79,17 @@ function App() {
           />
 
           <Route path="/sobre" element={<Sobre />} />
+
+          <Route
+            path="/carrinho"
+            element={
+              <Carrinnho
+                produtos={carrinho}
+                onRemover={removerDoCarrinho}
+                onFinalizar={limparCarrinho}
+              />
+            }
+          />
         </Routes>
       </main>
 

@@ -15,7 +15,7 @@ function Produtos(props: ProdutosProps) {
           nome="iPhone 18"
           descricao="Smartphone para o dia a dia"
           preco={999.99}
-          imagem=""
+          imagem="/images/iphone.jpg"
           onComprar={props.onComprar}
         />
 
@@ -23,7 +23,7 @@ function Produtos(props: ProdutosProps) {
           nome="Notebook Gamer"
           descricao="Alto desempenho para jogos"
           preco={1999.99}
-          imagem=""
+          imagem="/images/notebook.png"
           onComprar={props.onComprar}
         />
 
@@ -31,7 +31,7 @@ function Produtos(props: ProdutosProps) {
           nome="Smart TV 4K"
           descricao="Experiência de cinema em casa"
           preco={1499.99}
-          imagem=""
+          imagem="/images/smart4k.png"
           onComprar={props.onComprar}
         />
 
@@ -39,7 +39,7 @@ function Produtos(props: ProdutosProps) {
           nome="PlayStation 5"
           descricao="Console de última geração"
           preco={4999.99}
-          imagem=""
+          imagem="/images/ps5.jpg"
           onComprar={props.onComprar}
         />
 
@@ -47,7 +47,7 @@ function Produtos(props: ProdutosProps) {
           nome="Xbox Series X"
           descricao="Console de alto desempenho"
           preco={3999.99}
-          imagem=""
+          imagem="/images/xboxseriesx.jpg"
           onComprar={props.onComprar}
         />
       </div>

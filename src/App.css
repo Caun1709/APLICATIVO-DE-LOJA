@@ -216,3 +216,225 @@ color: #64748b;
 .item-carrinho button:hover {
   background-color: #b91c1c;
 }
+
+
+/* Confirmação de Pedido */
+.confirmacao-pedido {
+  background-color: white;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+  border-top: 5px solid #087bff;
+}
+
+.confirmacao-pedido h2 {
+  color: #12315a;
+  margin-bottom: 18px;
+}
+
+.confirmacao-pedido h3 {
+  color: #2563eb;
+  margin: 20px 0 10px;
+}
+
+.confirmacao-pedido p {
+  color: #475569;
+  margin: 10px 0;
+}
+
+/* Imagem do Card */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Página Inicial */
+.pagina-inicial {
+  padding: 20px;
+}
+
+.banner {
+  background: linear-gradient(135deg, #0755b8, #087bff);
+  color: white;
+  padding: 70px 30px;
+  text-align: center;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.botao-banner {
+  display: inline-block;
+  background-color: white;
+  color: #0755b8;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao-banner:hover {
+  background-color: #dbeafe;
+  transform: scale(1.05);
+}
+
+.destaque {
+  text-align: center;
+  padding: 30px;
+}
+
+.destaque h2 {
+  color: #12315a;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .destaque {
+    padding: 20px 10px;
+  }
+}
+
+/* Card */
+.card {
+background-color: #ffffff;
+border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card h2 {
+  color: #12315a;
+  margin: 15px 0;
+}
+
+.card p {
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+/* Botão do Card */
+.card button {
+  background-color: #087bff;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #0755b8;
+  transform: scale(1.05);
+}
+
+/* Oferta */
+.oferta {
+  background: linear-gradient(135deg, #fdfeff, #ffffff);
+  border: 2px solid #087bff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.oferta h2 {
+  color: #0755b8;
+  margin-bottom: 20px;
+}
+
+.oferta h3 {
+  color: #12315a;
+  margin-bottom: 12px;
+}
+
+.oferta strong {
+  display: block;
+  color: #087bff;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.botao-oferta {
+  display: inline-block;
+  background-color: #087bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-oferta:hover {
+  background-color: #0755b8;
+}
+
+/* Imagem da Oferta */
+.oferta img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 15px auto;
+}
+
+/* Beneficios */
+.beneficios {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.beneficios div {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.beneficios h3 {
+  color: #0755b8;
+}
