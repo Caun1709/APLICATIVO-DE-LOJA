@@ -83,39 +83,43 @@ footer {
 }
 
 /* Cabeçalho */
-.cabeçalho {
-  background-color: white;
+
+.cabecalho {
+  background: linear-gradient(135deg, #0755b8, #087bff);
   padding: 20px 40px;
-  color:#12315a;
+  color: white;
 }
 
-/* Marca */
-.marca{
+.marca {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 15px;
 }
 
-/* logo */
 .logo {
-  background-color: #087bff;
-  color: white;
-  font-size: bold;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px #00000015;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  color: #087bff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* Marca */
+
 .marca h1 {
   margin: 0;
-  color: #12315a;
-  
+  font-size: 28px;
 }
 
 .marca p {
-color: #64748b;
+  margin: 5px 0 0;
+  color: #eaf3ff;
 }
+
 
 /* Lista de Produtos */
 .lista-produtos {
@@ -438,3 +442,79 @@ border-radius: 16px;
 .beneficios h3 {
   color: #0755b8;
 }
+
+/* Rodapé 2 */
+.rodape {
+  background-color: #12315a;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 50px;
+}
+
+.rodape h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rodape p {
+  margin: 8px 0;
+}
+
+.rodape small {
+  display: block;
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* Pagina Sobre */
+.pagina-sobre {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.pagina-sobre h1 {
+  color: #0755b8;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.pagina-sobre > p {
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.sobre-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.sobre-info div {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+  transition: 0.3s;
+}
+
+.sobre-info div:hover {
+  transform: translateY(-6px);
+}
+
+.sobre-info h2 {
+  color: #087bff;
+  font-size: 20px;
+}
+
+.sobre-info p {
+  color: #475569;
+}
+
