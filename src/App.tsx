@@ -2,6 +2,7 @@ import Carrinnho from "./pages/Carinho";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
+import Busca from "./components/Busca";
 
 import Header from "./components/Header";
 import Menu from "./components/Menu";
@@ -19,6 +20,7 @@ interface ProdutoCarrinho {
 
 function App() {
   const [carrinho, setCarrinho] = useState<ProdutoCarrinho[]>([]);
+  const [pesquisa, setPesquisa] = useState("");
 
   function adicionarAoCarrinho(nome: string, preco: number) {
     const novoProduto = {
@@ -49,6 +51,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Menu />
+      <Busca
+      pesquisa={pesquisa}
+      setPesquisa={setPesquisa}
+      />
 
       <main>
         <div className="carrinho-resumo">
@@ -75,7 +81,12 @@ function App() {
 
           <Route
             path="/produtos"
-            element={<Produtos onComprar={adicionarAoCarrinho} />}
+            element={
+              <Produtos 
+              onComprar={adicionarAoCarrinho}
+              pesquisa={pesquisa}
+              />
+            }
           />
 
           <Route path="/sobre" element={<Sobre />} />

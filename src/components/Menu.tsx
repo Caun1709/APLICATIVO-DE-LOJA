@@ -1,13 +1,13 @@
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Menu() {
   return (
-    <nav>
-      <Link to="/">Início</Link>
-      <Link to="/produtos">Produtos</Link>
-      <Link to="/sobre">Sobre</Link>
-      <Link to="/carrinho">Carrinho</Link>
+    <nav className="menu">
+      <NavLink to="/">Início</NavLink>
+      <NavLink to="/produtos">Produtos</NavLink>
+      <NavLink to="/sobre">Sobre</NavLink>
+      <NavLink to="/carrinho">🛒 Carrinho</NavLink>
     </nav>
   );
 }
