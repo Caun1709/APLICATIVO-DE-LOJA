@@ -44,6 +44,18 @@ function Produtos(props: ProdutosProps) {
     preco: 2499.99,
     imagem: "/images/ipad.jfif",
 },
+{
+nome: "Fone Bluetooth",
+descricao: "Fone headset audio de alta qualidade e compactado",
+preco: 599.99,
+imagem:"/images/fone.jpg",
+},
+{
+nome: "Samsung Galaxy S26",
+descricao: "Android de última geração",
+preco: 1399.99,
+imagem:"/images/Samsung Galaxy S26.jfif",
+},
 ];
 
 const produtosFiltrados = produtos.filter((produto) =>
