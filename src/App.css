@@ -620,3 +620,24 @@ border-radius: 16px;
   color: #64748b;
   margin: 8px 0;
 }
+
+/* Avaliação dos produtos */
+.avaliacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.avaliacao span:first-child {
+  color: #f59e0b;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.avaliacao span:last-child {
+  color: #64748b;
+  font-size: 13px;
+}
